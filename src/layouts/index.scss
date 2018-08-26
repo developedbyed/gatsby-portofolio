@@ -6,6 +6,7 @@
 }
 body {
   font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(to top right, #0e7c7b, #000914);
 }
 
 .app {
@@ -225,11 +226,16 @@ body {
 }
 
 @keyframes runningFrames {
-  from {
+  0% {
     transform: translateX(350%);
+    opacity: 0;
   }
-  to {
+  50% {
+    opacity: 1;
+  }
+  100% {
     transform: translateX(0%);
+    opacity: 1;
   }
 }
 

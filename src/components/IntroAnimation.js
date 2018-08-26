@@ -14,7 +14,8 @@ export const LootieAnimation = () => {
     },
   }
   const style = {
-    animation: 'runningFrames 2.5s forwards',
+    animation: 'runningFrames 2.5s forwards 1s',
+    opacity: 0,
   }
 
   return (
