@@ -2,6 +2,7 @@ import React from 'react'
 import { ContactAnimation } from '../components/IntroAnimation'
 import PageTransition from 'gatsby-plugin-page-transitions'
 
+
 const ThirdPage = () => (
   <PageTransition
     defaultStyle={{
@@ -26,17 +27,23 @@ const ThirdPage = () => (
           action="https://formspree.io/simo.edwin@yahoo.com"
           method="POST"
         >
-          <label> Name</label>
-          <input className="contact-input" type="text" name="name" required />
-          <label> Email</label>
-          <input
-            className="contact-input"
-            type="email"
-            name="_replyto"
-            required
-          />
-          <label> Description</label>
-          <textarea className="contact-textarea" name="description" required />
+          <div>
+            <label className="control-label"> Name</label>
+            <input className="contact-input" type="text" name="name" required />
+          </div>
+          <div>
+            <label className='control-label'> Email</label>
+            <input
+              className="contact-input"
+              type="email"
+              name="_replyto"
+              required
+            />
+          </div>
+          <div>
+            <label> Description</label>
+            <textarea className="contact-textarea" name="description" required />
+          </div>
           <button className="contact-button" type="submit" value="Send">
             Submit
           </button>
@@ -44,7 +51,7 @@ const ThirdPage = () => (
       </div>
       <ContactAnimation />
     </div>
-  </PageTransition>
+  </PageTransition >
 )
 
 export default ThirdPage
