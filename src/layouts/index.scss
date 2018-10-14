@@ -43,10 +43,24 @@ body {
   justify-content: center;
   align-items: center;
 }
+.popup {
+  font-size: 20px;
+  padding: 25px;
+  border-radius: 10px;
+  line-height: 30px;
+  background-color: #efefef;
+  color: rgb(66, 66, 66);
+  width: 30%;
+  position: absolute;
+  opacity: 0;
+  bottom: 18%;
+  transform: translate(-0%, -18%);
+  animation: fade 0.5s ease 3s forwards;
+}
 
 .nav-wrapper {
   height: 100vh;
-  background-color:#505f75;
+  background-color: #505f75;
   flex: 1;
 }
 .nav-image {
@@ -63,10 +77,10 @@ body {
   padding: 0px;
   list-style: none;
   background-color: #505f75;
-  a{
+  a {
     text-align: center;
   }
-  p{
+  p {
     font-size: 14px;
   }
 }
@@ -94,17 +108,19 @@ body {
   animation: bounce 0.5s infinite alternate ease-out;
 }
 .box {
-  width: 500px;
+  width: 400px;
   height: 400px;
   background-color: #eeeeee;
   display: flex;
   flex-direction: column;
+  color: rgb(49, 49, 49);
   align-items: center;
   transition: all 0.5s ease;
   justify-content: space-between;
   border-radius: 5px;
   position: relative;
-  div{
+  margin: 20px;
+  div {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -135,7 +151,7 @@ body {
 }
 .project-wrapper {
   width: 100%;
-  background: linear-gradient(to top right, #15663e, #000914);
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
 }
 .project-title {
   height: 20vh;
@@ -192,12 +208,10 @@ body {
   width: 40%;
   height: 90%;
   border-radius: 5px;
-  div{
+  div {
     position: relative;
     width: 90%;
-    label{
-      position: absolute;
-      transition: all 0.2s ease;
+    label {
     }
   }
 }
@@ -210,11 +224,13 @@ body {
   font-size: 20px;
   border-bottom: 1px solid #554872;
   outline: none;
+  margin-top: 10px;
   &:focus {
     border-bottom: 2px solid #554872;
   }
 }
 .contact-textarea {
+  margin-top: 10px;
   width: 100%;
   height: 100px;
   outline: none;
@@ -248,6 +264,15 @@ body {
   }
 }
 
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 @keyframes runningFrames {
   0% {
     transform: translateX(350%);
@@ -262,6 +287,25 @@ body {
   }
 }
 
+@media screen and(max-width: 1424px) {
+  .project-list {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: flex-start;
+  }
+  .popup {
+    width: 70%;
+  }
+  .box {
+    width: 40%;
+    height: 100%;
+    margin-right: 20px;
+    flex: 0 0 auto;
+    &::after {
+      display: none;
+    }
+  }
+}
 
 @media screen and (max-width: 768px) {
   .app {
@@ -272,6 +316,9 @@ body {
     flex-direction: row;
     height: 10vh;
     order: 1;
+  }
+  .popup {
+    display: none;
   }
   .nav-image {
     display: none;
@@ -302,19 +349,19 @@ body {
     flex-wrap: nowrap;
     overflow-x: auto;
     justify-content: flex-start;
-    height: 45vh;
   }
   .box {
     width: 100%;
-    height: 9 0%;
+    height: 100%;
     margin-right: 20px;
     flex: 0 0 auto;
     &::after {
       display: none;
     }
   }
+
   .contact-form {
-    width: 80%;
+    width: 90%;
   }
   .form-wrapper {
     height: 75vh;

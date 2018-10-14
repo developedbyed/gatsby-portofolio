@@ -2,6 +2,7 @@ import React from 'react'
 import ProjectBox from '../components/ProjectBox'
 import swirl from '../img/swirl-website.jpg'
 import tap from '../img/tap-music.jpg'
+import wood from '../img/wood.png'
 import weather from '../img/weather-app.jpg'
 import { ProjectAnimation } from '../components/IntroAnimation'
 import PageTransition from 'gatsby-plugin-page-transitions'
@@ -25,6 +26,12 @@ const SecondPage = () => (
         <p className="p-title"> Projects </p>
       </div>
       <div className="project-list">
+        <ProjectBox
+          visit="https://devedwin.github.io/wood-only/"
+          title="Wood Only"
+          image={wood}
+          text="A store to please your interior design with high quality wood"
+        />
         <ProjectBox
           visit="https://devedwin.github.io/Swirl-Website/"
           title="Swirl Website"

@@ -20,7 +20,11 @@ const IndexPage = () => (
     <div className="intro-wrapper">
       <div className="title-wrapper">
         <h1 className="title">Simo Edwin</h1>
-        <h2 className="subtitle">Fullstack Web Developer</h2>
+        <h2 className="subtitle">Front End Web Developer</h2>
+        <p className="popup">
+          Hi! I develop websites and web applications with modern Javascript
+          frameworks! Contact me if you are interested in working together!
+        </p>
       </div>
       <div className="social-wrapper">
         <a href="https://github.com/devedwin" target="_blank">
