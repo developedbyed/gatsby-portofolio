@@ -21,7 +21,7 @@ body {
 .title-wrapper {
   display: flex;
   flex-direction: column;
-  height: 40vh;
+  min-height: 40vh;
   align-items: center;
   justify-content: flex-end;
   color: #efefef;
@@ -38,7 +38,7 @@ body {
   color: #efefef;
 }
 .social-wrapper {
-  height: 30vh;
+  min-height: 30vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,10 +47,10 @@ body {
   font-size: 20px;
   padding: 25px;
   border-radius: 10px;
-  line-height: 30px;
+  line-min-height: 30px;
   background-color: #efefef;
   color: rgb(66, 66, 66);
-  width: 30%;
+  width: 50%;
   position: absolute;
   opacity: 0;
   bottom: 18%;
@@ -59,17 +59,17 @@ body {
 }
 
 .nav-wrapper {
-  height: 100vh;
+  min-height: 100vh;
   background-color: #505f75;
   flex: 1;
 }
 .nav-image {
-  height: 25vh;
+  min-height: 25vh;
   display: flex;
   justify-content: center;
 }
 .nav-links {
-  height: 50vh;
+  min-height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -91,12 +91,12 @@ body {
   padding: 20px 40px;
 }
 .logo {
-  height: 100%;
+  min-height: 100%;
   width: 100%;
 }
 
 .animation-wrapper {
-  height: 30vh;
+  min-height: 30vh;
   display: flex;
   align-items: flex-end;
   overflow: hidden;
@@ -109,7 +109,7 @@ body {
 }
 .box {
   width: 400px;
-  height: 400px;
+  min-height: 400px;
   background-color: #eeeeee;
   display: flex;
   flex-direction: column;
@@ -125,7 +125,7 @@ body {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 100%;
+    min-height: 100%;
     padding: 10px;
   }
 }
@@ -143,7 +143,7 @@ body {
   top: 0px;
   left: 0px;
   width: 100%;
-  height: 100%;
+  min-height: 100%;
   pointer-events: none;
 }
 .box:hover::after {
@@ -154,13 +154,13 @@ body {
   background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
 }
 .project-title {
-  height: 20vh;
+  min-height: 20vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .project-list {
-  height: 50vh;
+  min-height: 50vh;
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
@@ -172,7 +172,7 @@ body {
 }
 
 .project-animation {
-  height: 30vh;
+  min-height: 30vh;
   display: flex;
   align-items: flex-end;
   overflow: hidden;
@@ -180,7 +180,7 @@ body {
 .box-image {
   width: 100%;
   border-radius: 5px;
-  height: auto;
+  min-height: auto;
 }
 .contact-animation {
   position: absolute;
@@ -193,7 +193,7 @@ body {
   width: 100%;
 }
 .form-wrapper {
-  height: 80vh;
+  height: 75vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -205,7 +205,7 @@ body {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  width: 40%;
+  width: 50%;
   height: 90%;
   border-radius: 5px;
   div {
@@ -232,7 +232,7 @@ body {
 .contact-textarea {
   margin-top: 10px;
   width: 100%;
-  height: 100px;
+  min-height: 100px;
   outline: none;
   border: 1px solid #554872;
   background-color: #efefef;
@@ -298,7 +298,7 @@ body {
   }
   .box {
     width: 40%;
-    height: 100%;
+    min-height: 100%;
     margin-right: 20px;
     flex: 0 0 auto;
     &::after {
@@ -314,7 +314,7 @@ body {
   .nav-wrapper {
     display: flex;
     flex-direction: row;
-    height: 10vh;
+    min-height: 10vh;
     order: 1;
   }
   .popup {
@@ -326,10 +326,10 @@ body {
   .nav-links {
     flex-direction: row;
     width: 100%;
-    height: 10vh;
+    min-height: 10vh;
   }
   .title-wrapper {
-    height: 30vh;
+    min-height: 30vh;
     justify-content: center;
   }
   .title {
@@ -339,7 +339,7 @@ body {
     font-size: 18px;
   }
   .project-title {
-    height: 15vh;
+    min-height: 15vh;
   }
   .p-title {
     font-size: 25px;
@@ -349,22 +349,29 @@ body {
     flex-wrap: nowrap;
     overflow-x: auto;
     justify-content: flex-start;
+    align-items: center;
   }
   .box {
     width: 100%;
-    height: 100%;
-    margin-right: 20px;
+    min-height: 100%;
     flex: 0 0 auto;
+    margin: 0px;
     &::after {
       display: none;
     }
+  }
+  .box-image {
+    min-height: 100%;
+  }
+  .project-animation {
+    min-height: 25vh;
   }
 
   .contact-form {
     width: 90%;
   }
   .form-wrapper {
-    height: 75vh;
+    min-height: 75vh;
   }
   .nav-link {
     padding: 0px;
