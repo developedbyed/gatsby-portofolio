@@ -47,7 +47,7 @@ body {
   font-size: 20px;
   padding: 25px;
   border-radius: 10px;
-  line-min-height: 30px;
+  min-height: 30px;
   background-color: #efefef;
   color: rgb(66, 66, 66);
   width: 50%;
@@ -193,7 +193,7 @@ body {
   width: 100%;
 }
 .form-wrapper {
-  height: 75vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
