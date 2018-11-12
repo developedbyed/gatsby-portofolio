@@ -6,6 +6,5 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     `gatsby-plugin-sass`,
     'gatsby-plugin-page-transitions',
-    'gatsby-plugin-offline',
   ],
 }
