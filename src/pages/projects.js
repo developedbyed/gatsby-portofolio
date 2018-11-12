@@ -23,7 +23,7 @@ const SecondPage = () => (
   >
     <div className="project-wrapper">
       <div className="project-title">
-        <p className="p-title"> Projects </p>
+        <p className="p-title">Personal Projects </p>
       </div>
       <div className="project-list">
         <ProjectBox

@@ -29,15 +29,18 @@ const IndexPage = () => (
       <div className="social-wrapper">
         <a href="https://github.com/devedwin" target="_blank">
           <Github color="#EFEFEF" size="48" className="social-links" />
+          Github
         </a>
         <a href="https://www.youtube.com/c/DevEd" target="_blank">
           <Youtube color="#EFEFEF" size="48" className="social-links" />
+          Youtube
         </a>
         <a
           href="https://www.linkedin.com/in/simo-edwin-57a25714b/"
           target="_blank"
         >
           <Linkedin color="#EFEFEF" size="48" className="social-links" />
+          LinkedIn
         </a>
       </div>
       <LootieAnimation />

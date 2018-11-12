@@ -21,7 +21,7 @@ body {
 .title-wrapper {
   display: flex;
   flex-direction: column;
-  min-height: 40vh;
+  min-height: 30vh;
   align-items: center;
   justify-content: flex-end;
   color: #efefef;
@@ -42,6 +42,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  a {
+    color: #efefef;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
 }
 .popup {
   font-size: 20px;
@@ -53,7 +59,7 @@ body {
   width: 50%;
   position: absolute;
   opacity: 0;
-  bottom: 18%;
+  bottom: 20%;
   transform: translate(-0%, -18%);
   animation: fade 0.5s ease 3s forwards;
 }
@@ -77,18 +83,21 @@ body {
   padding: 0px;
   list-style: none;
   background-color: #505f75;
-  a {
-    text-align: center;
-  }
-  p {
+  li {
+    display: block;
     font-size: 14px;
+    text-align: center;
+    color: #efefef;
   }
 }
 .nav-link {
   color: white;
   text-decoration: none;
   font-size: 18px;
-  padding: 20px 40px;
+  padding: 10px 40px;
+  display: block;
+  text-align: center;
+  margin: 0px;
 }
 .logo {
   min-height: 100%;
@@ -96,7 +105,7 @@ body {
 }
 
 .animation-wrapper {
-  min-height: 30vh;
+  min-height: 40vh;
   display: flex;
   align-items: flex-end;
   overflow: hidden;
@@ -108,24 +117,22 @@ body {
   animation: bounce 0.5s infinite alternate ease-out;
 }
 .box {
-  width: 400px;
-  min-height: 400px;
+  width: 60%;
+  min-height: 100%;
+  margin: 10px auto 50px auto;
+  position: relative;
   background-color: #eeeeee;
-  display: flex;
-  flex-direction: column;
   color: rgb(49, 49, 49);
   align-items: center;
   transition: all 0.5s ease;
-  justify-content: space-between;
   border-radius: 5px;
-  position: relative;
-  margin: 20px;
+
   div {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    min-height: 100%;
+    min-height: 150px;
     padding: 10px;
   }
 }
@@ -161,9 +168,6 @@ body {
 }
 .project-list {
   min-height: 50vh;
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-end;
   width: 100%;
 }
 .p-title {
@@ -211,8 +215,6 @@ body {
   div {
     position: relative;
     width: 90%;
-    label {
-    }
   }
 }
 
@@ -288,22 +290,8 @@ body {
 }
 
 @media screen and(max-width: 1424px) {
-  .project-list {
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    justify-content: flex-start;
-  }
   .popup {
     width: 70%;
-  }
-  .box {
-    width: 40%;
-    min-height: 100%;
-    margin-right: 20px;
-    flex: 0 0 auto;
-    &::after {
-      display: none;
-    }
   }
 }
 
@@ -345,17 +333,10 @@ body {
     font-size: 25px;
     color: #efefef;
   }
-  .project-list {
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    justify-content: flex-start;
-    align-items: center;
-  }
+
   .box {
-    width: 100%;
+    width: 90%;
     min-height: 100%;
-    flex: 0 0 auto;
-    margin: 0px;
     &::after {
       display: none;
     }
@@ -375,5 +356,20 @@ body {
   }
   .nav-link {
     padding: 0px;
+  }
+  .social-wrapper {
+    color: #efefef;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    a {
+      margin: 0px 30px;
+      position: relative;
+      svg {
+        position: absolute;
+        top: 10px;
+        left: -10px;
+      }
+    }
   }
 }
